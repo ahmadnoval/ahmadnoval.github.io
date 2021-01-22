@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<form>
+  <div class="form-group row">
+    <label for="text" class="col-4 col-form-label">Nama perusahaan/organisasi</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-address-card"></i>
+          </div>
+        </div> 
+        <input id="text" name="text" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="Bidang usaha" class="col-4 col-form-label">Bidang usaha</label> 
+    <div class="col-8">
+      <select id="Bidang usaha" name="Bidang usaha" class="custom-select">
+        <option value="Web developer">Web developer</option>
+        <option value="Web design">Web design</option>
+        <option value="web programmer">web programmer</option>
+        <option value="Cyber security">Cyber security</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="Deskripsi lowongan" class="col-4 col-form-label">Deskripsi lowongan</label> 
+    <div class="col-8">
+      <textarea id="Deskripsi lowongan" name="Deskripsi lowongan" cols="40" rows="3" class="form-control"></textarea>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="Deskripsi kualifikasi lowongan" class="col-4 col-form-label">Deskripsi kualifikasi lowongan</label> 
+    <div class="col-8">
+      <textarea id="Deskripsi kualifikasi lowongan" name="Deskripsi kualifikasi lowongan" cols="40" rows="3" class="form-control"></textarea>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4">Kategori lowongan</label> 
+    <div class="col-8">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="Kategori lowongan" id="Kategori lowongan_0" type="radio" class="custom-control-input" value="Web developer"> 
+        <label for="Kategori lowongan_0" class="custom-control-label">Web developer</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="Kategori lowongan" id="Kategori lowongan_1" type="radio" class="custom-control-input" value="Web design"> 
+        <label for="Kategori lowongan_1" class="custom-control-label">Web design</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="Kategori lowongan" id="Kategori lowongan_2" type="radio" class="custom-control-input" value="web programmer"> 
+        <label for="Kategori lowongan_2" class="custom-control-label">web programmer</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="Kategori lowongan" id="Kategori lowongan_3" type="radio" class="custom-control-input" value="Cyber security"> 
+        <label for="Kategori lowongan_3" class="custom-control-label">Cyber security</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="Kotak person" class="col-4 col-form-label">Kotak person</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text"></div>
+        </div> 
+        <input id="Kotak person" name="Kotak person" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="email" class="col-4 col-form-label">email</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text"></div>
+        </div> 
+        <input id="email" name="email" type="text" class="form-control">
+      </div>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+</body>
+</html>

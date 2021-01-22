@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>form1</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--     <link href="form1/layoutit/src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="form1/layoutit/src/css/style.css" rel="stylesheet"> -->
+
+  </head>
+  <body>
+	
+
+	<h3 align="center">Sistem Informasi Lowongan Kerja</h3>
+	<nav class="navbar  bg-dark">
+    <div class="container ">
+	<div class="row">
+		<div class="col-md-12">
+			<ul class="nav">
+				<li class="nav-item ">
+					<a class="nav-link active" href="/siloker/depan1.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Lowongan baru</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Isi Loker</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Daftar berita</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Berita</a>
+				</li>
+				<li class="nav-item dropdown ml-md-auto">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+     			    
+				</li>
+				<a class="nav-link active" href="#">Login</a>
+			</ul>
+		</div>
+	</div>
+	
+<hr>
+	<ul class="nav justify-content-end ">
+		<li class="nav-item">
+		  <a class="nav-link active" href="#">Home</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">Daftar Mitra</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link disabled" href="#">Isi Loker</a>
+		</li>
+	  </ul>
+<hr>
+
+	<div class="container">
+		<div class="d-flex justify-content-center">
+		<div class="col-md-6">
+		
+			
+			<form autocomplete="off" onsubmit="onFormSubmit()" action="./adminForm.html">
+				<div class="form-group">
+				  <label for="perusahaan">Nama perusahaan/Organisasi</label>
+				  <input type="text" class="form-control" id="perusahaan" placeholder="Input date">
+				</div>
+				<label for="perusahaan">Bidang Usaha</label>
+				<select class="form-control" id="usaha">
+					<option>Programer</option>
+					<option>Web developer</option>
+					<option>Cyber Security</option>
+					<option>Software engineering</option>
+				  </select>
+				  <div class="form-group">
+					<label for="deskripsiLowongan">Deskripsi Lowongan</label>
+					<textarea class="form-control" id="deskripsiLowongan" rows="2" placeholder="Input date"></textarea>
+				  </div>
+				  <br>
+
+				  <div class="form-group">
+					<label for="kualifikasiLowongan">Deskripsi Kualifikasi Lowongan</label>
+					<textarea class="form-control" id="kualifikasiLowongan" rows="2" placeholder="Input date"></textarea>
+				  </div>
+
+				<br>
+		
+
+				  <div class="form-group row">
+					<label for="text" class="col-4 col-form-label">tanggal dateline</label> 
+					<div class="col-8 ml-2 mt-8">
+					  <tr>
+						<td><input type="date" id="date"></td>
+					</tr>
+					</div>
+					</div> 
+					<br>
+					<label for="kategoriLowongan">Kategori Lowongan </label>
+					<div class="form-check-inline mt-8 ">
+					  </div>
+					
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="flexRadioDefault" id="kategoriLowongan">
+						<label class="form-check-label" for="kategoriLowongan">
+							Programer
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="flexRadioDefault" id="kategoriLowongan1" checked>
+						<label class="form-check-label" for="kategoriLowongan1">
+						  Web developer
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="flexRadioDefault" id="kategoriLowongan2">
+						<label class="form-check-label" for="kategoriLowongan2">
+							Cyber Security
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input class="form-check-input" type="radio" name="flexRadioDefault" id="kategoriLowongan3" checked>
+						<label class="form-check-label" for="kategoriLowongan3">
+							Software engineering
+						</label>
+					  </div>
+
+					  <br>
+				  <div class="wrap-input100 validate-input mt-4" data-validate="Phone is required">
+					<span class="label-input100">Kontak Person</span>
+					<input type="text" class="form-control" name="phone" id="nomor" placeholder="Enter phone number">
+					<span class="focus-input100"></span>
+				</div>
+				<br>
+				  <div class="form-group">
+					<label for="exampleFormControlInput1">Email </label>
+					<input type="email" class="form-control" id="email" placeholder="enter your email">
+					<small id="emailHelp" class="form-text text-muted">Kita tidak pernah menyebarkan email anda dengan siapapun</small>
+				  </div>
+				  <br>
+
+				  <button type="button" class="btn btn-primary">Daftar</button>
+			 	  <button type="button" class="btn btn-primary">Batal</button>		
+
+				  <footer class="bg-dark text-dark">
+					<div class="container-fluid">
+						<div class="row pt-3">
+							<div class="col text-center">
+								<p>Develop By Mahasiswa STT.NF @202</p>
+				
+							</div>
+						</div>
+					</div>
+				  </footer>
+				</div>
+
+
+				
+				
+			  </form>
+			
+			 			
+		</div>
+		
+	</div>
+	</div>
+
+
+
+
+	<div class="row">
+		<div class="col-md-12">
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!--     <script src="form1/layoutit/src/js/jquery.min.js"></script>
+    <script src="form1/layoutit/src/js/bootstrap.min.js"></script>
+    <script src="form1/layoutit/src/js/scripts.js"></script> -->
+  </body>
+</html>
